@@ -8,7 +8,7 @@ const proxy = httpProxy.createProxyServer({});
 const PORT = 4000;
 
 /********* Middleware *********/
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static('client'));
 app.use(cors());
 
 
